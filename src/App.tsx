@@ -7,7 +7,7 @@ import { matches, rank, type Post, type SortKey } from "./format";
 const POSTS = data.posts as Post[];
 const TOPICS = data.topics as string[];
 const PAGE = 8;
-const X_SEARCH = "https://x.com/search?q=IdentityMD";
+const X_SEARCH = "https://x.com/search?q=%22Identity%20MD%22";
 
 export default function App() {
   const [sort, setSort] = useState<SortKey>("top");
@@ -33,9 +33,13 @@ export default function App() {
   const copyLink = async (post: Post) => {
     try {
       await navigator.clipboard.writeText(post.url);
-      setStatus(`Copied the link to ${post.author.name}'s post.`);
+      setStatus(post.url.includes("/status/")
+        ? `Copied the link to ${post.author.name}'s tweet.`
+        : "Copied the X search link.");
     } catch {
-      setStatus("Unable to copy. Open the post and copy its address instead.");
+      setStatus(post.url.includes("/status/")
+        ? "Unable to copy. Open the tweet and copy its address instead."
+        : "Unable to copy. Use Search on X and copy its address instead.");
     }
   };
 
@@ -47,7 +51,7 @@ export default function App() {
   return (
     <>
       <a className="skip" href="#posts">
-        Skip to posts
+        Skip to tweets
       </a>
 
       <header className="site-head">
@@ -63,15 +67,15 @@ export default function App() {
       <main id="main">
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <h1 id="hero-title">The Identity MD timeline, ranked.</h1>
-            <p className="hero-line">The most liked and reposted posts about Identity MD, in one list.</p>
+            <h1 id="hero-title">Identity MD tweets, ranked.</h1>
+            <p className="hero-line">Sample Identity MD tweets.</p>
           </div>
           <HeroPepe className="hero-art" />
         </section>
 
         <section className="controls" aria-label="Sort and filter">
           <div className="control-row">
-            <div className="segment" role="group" aria-label="Sort posts">
+            <div className="segment" role="group" aria-label="Sort tweets">
               <button
                 type="button"
                 className="seg-btn"
@@ -91,7 +95,7 @@ export default function App() {
             </div>
 
             <div className="search">
-              <label htmlFor={searchId}>Search posts</label>
+              <label htmlFor={searchId}>Search tweets</label>
               <input
                 ref={searchRef}
                 id={searchId}
@@ -132,16 +136,16 @@ export default function App() {
           <div className="posts-head">
             <h2 id="posts-title">
               {visible.length === POSTS.length
-                ? `${POSTS.length} posts`
-                : `${visible.length} of ${POSTS.length} posts`}
+                ? `${POSTS.length} tweets`
+                : `${visible.length} of ${POSTS.length} tweets`}
             </h2>
-            <p className="posts-note">From a list kept in this repository, not a live feed.</p>
+            <p className="posts-note">{data.note}</p>
           </div>
 
           {shown.length === 0 ? (
             <div className="empty">
               <p className="empty-title">
-                {query.trim() ? `No posts match "${query.trim()}".` : `No posts tagged ${topic}.`}
+                {query.trim() ? `No tweets match "${query.trim()}".` : `No tweets tagged ${topic}.`}
               </p>
               <p className="empty-line">Try another word, or widen the list.</p>
               <div className="empty-actions">
@@ -174,7 +178,7 @@ export default function App() {
           {hidden > 0 && (
             <div className="more">
               <button type="button" className="btn btn-quiet" onClick={() => setLimit(limit + PAGE)}>
-                {hidden === 1 ? "Show 1 more post" : `Show ${Math.min(hidden, PAGE)} more posts`}
+                {hidden === 1 ? "Show 1 more tweet" : `Show ${Math.min(hidden, PAGE)} more tweets`}
               </button>
             </div>
           )}
@@ -194,11 +198,8 @@ export default function App() {
       </div>
 
       <footer className="site-foot">
-        <p>
-          Edit <code>src/data/tweets.json</code> and rebuild to change the list.
-        </p>
         <a href={X_SEARCH} target="_blank" rel="noopener noreferrer">
-          Find newer posts about Identity MD on X
+          Find tweets about Identity MD on X
         </a>
       </footer>
     </>

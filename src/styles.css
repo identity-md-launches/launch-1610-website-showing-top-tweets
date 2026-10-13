@@ -30,7 +30,6 @@
 
   /* type scale: six steps, one family, three weights */
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --text-xs: 0.8125rem; /* 13px: meta, topic tags */
   --text-sm: 0.875rem; /* 14px: labels, buttons, metrics */
   --text-md: 1rem; /* 16px: body, post text */
@@ -113,12 +112,6 @@ ol,
 ul {
   padding: 0;
   list-style: none;
-}
-
-code {
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  color: var(--color-accent-text);
 }
 
 a {
@@ -208,9 +201,9 @@ a {
 }
 .chip[aria-pressed="true"],
 .seg-btn[aria-pressed="true"] {
-  background: var(--color-accent-solid);
+  background: var(--color-bg-raised);
   border-color: var(--color-accent-solid);
-  color: var(--color-on-accent);
+  color: var(--color-accent-text);
 }
 
 .segment {
@@ -252,9 +245,9 @@ main,
   font-size: var(--text-md);
   white-space: nowrap;
 }
-/* Below 360px the wordmark and the header's one utility cannot share a row; the
+/* On narrow phones the wordmark and the header's utility cannot share a row; the
    mark stays and the link keeps its accessible name. */
-@media (max-width: 22.4rem) {
+@media (max-width: 24.5rem) {
   .brand-name {
     display: none;
   }

@@ -57,7 +57,7 @@ export function TweetCard({ post, position, onCopy }: Props) {
             Copy link
           </button>
           <a className="btn btn-solid" href={post.url} target="_blank" rel="noopener noreferrer">
-            Open post
+            {post.url.includes("/status/") ? "Open tweet" : "Search on X"}
           </a>
         </div>
       </div>
