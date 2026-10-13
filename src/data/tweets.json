@@ -1,0 +1,160 @@
+{
+  "note": "Starter list. Replace or extend these entries with the real posts you want ranked. Each entry needs id, url, author, text, date (ISO), likes, reposts, replies and topics. The site rebuilds the ranking from this file; nothing is fetched at run time.",
+  "topics": ["Agents", "Contracts", "Launches", "Memes", "Builders"],
+  "posts": [
+    {
+      "id": "1",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Agent Pepe", "handle": "agentpepe", "pepe": "visor" },
+      "text": "Gave my agent an Identity MD job this morning. It wrote the contract, ran the tests, shipped the site and asked for review before I finished my coffee.",
+      "date": "2026-10-09T14:20:00Z",
+      "likes": 4812,
+      "reposts": 1203,
+      "replies": 188,
+      "topics": ["Agents"]
+    },
+    {
+      "id": "2",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Verifier Frog", "handle": "verifierfrog", "pepe": "antenna" },
+      "text": "The part of Identity MD nobody talks about: the verifier does not trust the worker. It checks the paths and the bytes, then a second machine reviews the design. That is the whole point.",
+      "date": "2026-10-07T09:05:00Z",
+      "likes": 3950,
+      "reposts": 980,
+      "replies": 142,
+      "topics": ["Contracts", "Builders"]
+    },
+    {
+      "id": "3",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Swamp Ops", "handle": "swampops", "pepe": "headset" },
+      "text": "Identity MD launch checklist: write the brief, pin the skills, let the swarm build, read the critic's table, publish. Five lines. No meetings.",
+      "date": "2026-10-11T18:40:00Z",
+      "likes": 3610,
+      "reposts": 1110,
+      "replies": 97,
+      "topics": ["Launches"]
+    },
+    {
+      "id": "4",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Lily Pad Labs", "handle": "lilypadlabs", "pepe": "chip" },
+      "text": "We moved our contract reviews to Identity MD workers. A high finding reopens the build automatically, so the fix lands before anyone has to ask for it.",
+      "date": "2026-10-04T12:00:00Z",
+      "likes": 2985,
+      "reposts": 640,
+      "replies": 73,
+      "topics": ["Contracts"]
+    },
+    {
+      "id": "5",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Pepe Prime", "handle": "pepeprime", "pepe": "core" },
+      "text": "me: one small website please. Identity MD: here is a site, a typecheck, a probe at three widths and a design review. ok then.",
+      "date": "2026-10-12T07:30:00Z",
+      "likes": 2740,
+      "reposts": 890,
+      "replies": 210,
+      "topics": ["Memes"]
+    },
+    {
+      "id": "6",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Deploy Toad", "handle": "deploytoad", "pepe": "visor" },
+      "text": "Every Identity MD site ships as a pinned static export. No server, no rewrites, works at a gateway subpath or an ENS name. This is how it should have always worked.",
+      "date": "2026-10-02T16:15:00Z",
+      "likes": 2410,
+      "reposts": 530,
+      "replies": 44,
+      "topics": ["Launches", "Builders"]
+    },
+    {
+      "id": "7",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Ribbit Research", "handle": "ribbitresearch", "pepe": "antenna" },
+      "text": "Read the Identity MD design bar: six type sizes, no kicker labels, no horizontal scroll at 320. It is strict and it is right. Our pages got better in a week.",
+      "date": "2026-09-28T11:45:00Z",
+      "likes": 2105,
+      "reposts": 410,
+      "replies": 61,
+      "topics": ["Builders"]
+    },
+    {
+      "id": "8",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Marsh Mallow", "handle": "marshmallow", "pepe": "chip" },
+      "text": "Identity MD worker status: armed with AI, fuelled by briefs, allergic to node_modules in git.",
+      "date": "2026-10-10T21:10:00Z",
+      "likes": 1990,
+      "reposts": 720,
+      "replies": 58,
+      "topics": ["Memes"]
+    },
+    {
+      "id": "9",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Bog Standard", "handle": "bogstandard", "pepe": "headset" },
+      "text": "Tried to sneak a stand-in address into an Identity MD contract job. The check refused it and asked the requester for the real one. Good. That is the behaviour I want from a machine holding keys.",
+      "date": "2026-09-30T08:20:00Z",
+      "likes": 1760,
+      "reposts": 330,
+      "replies": 39,
+      "topics": ["Contracts", "Agents"]
+    },
+    {
+      "id": "10",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Croak Capital", "handle": "croakcapital", "pepe": "core" },
+      "text": "Watched an Identity MD swarm take a two-line brief to a reviewed, published site in under two hours. The critic's table at the end is the best part of the report.",
+      "date": "2026-10-06T15:55:00Z",
+      "likes": 1540,
+      "reposts": 290,
+      "replies": 27,
+      "topics": ["Launches", "Agents"]
+    },
+    {
+      "id": "11",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Newt Networks", "handle": "newtnetworks", "pepe": "visor" },
+      "text": "Identity MD jobs come with a clock. The worker either finishes inside it or writes down exactly what it needs from you. No silent timeouts, no half-shipped work.",
+      "date": "2026-10-01T13:30:00Z",
+      "likes": 1320,
+      "reposts": 210,
+      "replies": 33,
+      "topics": ["Agents", "Builders"]
+    },
+    {
+      "id": "12",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Tadpole Dev", "handle": "tadpoledev", "pepe": "antenna" },
+      "text": "First Identity MD contribution done. The brief said dark green with pepes. The review said the hero pushed the product below the fold. Fixed it in one revision. Fair cop.",
+      "date": "2026-10-08T19:25:00Z",
+      "likes": 1180,
+      "reposts": 160,
+      "replies": 51,
+      "topics": ["Builders", "Memes"]
+    },
+    {
+      "id": "13",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Pond Protocol", "handle": "pondprotocol", "pepe": "chip" },
+      "text": "The Identity MD contributor network is the first place where I would rather read the machine's validation notes than the human's launch thread.",
+      "date": "2026-09-26T10:00:00Z",
+      "likes": 960,
+      "reposts": 140,
+      "replies": 22,
+      "topics": ["Builders"]
+    },
+    {
+      "id": "14",
+      "url": "https://x.com/search?q=IdentityMD",
+      "author": { "name": "Amphibian Al", "handle": "amphibianal", "pepe": "core" },
+      "text": "If your contract job on Identity MD needs an owner address, say so in the brief. The worker will not guess, and it will not ship a dead address either.",
+      "date": "2026-10-05T06:45:00Z",
+      "likes": 870,
+      "reposts": 120,
+      "replies": 19,
+      "topics": ["Contracts"]
+    }
+  ]
+}
